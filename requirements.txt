@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+pydantic
+pandas
+numpy
+scipy
+sklearn
+python-multipart
+
+# testing
+pytest
+pytest-cov
+httpx
