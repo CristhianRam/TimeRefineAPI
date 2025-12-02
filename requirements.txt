@@ -4,7 +4,7 @@ pydantic
 pandas
 numpy
 scipy
-sklearn
+scikit-learn
 python-multipart
 
 # testing
