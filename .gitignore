@@ -1,0 +1,47 @@
+# --- Virtual Environments ---
+venv/
+.venv/
+env/
+ENV/
+venv.bak/
+
+# --- Python cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- VSCode ---
+.vscode/
+
+# --- macOS / Linux / Windows system files ---
+.DS_Store
+Thumbs.db
+
+# --- Test / Coverage ---
+.coverage
+htmlcov/
+.coverage.*
+.cache/
+
+# --- Environments & configs ---
+*.env
+.env.*
+
+# --- Logs ---
+logs/
+*.log
+
+# --- Byte-compiled / optimized ---
+*.pyo
+*.pyd
+
+# --- MyPy ---
+.mypy_cache/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Build ---
+build/
+dist/
+*.egg-info/
