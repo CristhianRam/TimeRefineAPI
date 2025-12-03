@@ -1,7 +1,10 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
+from typing import List, Optional
 
 class TimeSeriesRequest(BaseModel):
-    timestamps: List[str] = Field(..., description="List of timestamps in ISO format.")
+    timestamps: List[float] = Field(
+        ..., description="List of timestamps in seconds or any numeric format."
+    )
 
     # matrix: rows = time, columns = features/sensors
     values: List[List[Optional[float]]] = Field(

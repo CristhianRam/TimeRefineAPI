@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from app.models.cleaning import CleaningOptions
+from app.schemas.Cleaning import CleaningOptions
 
 def clean_time_series(
     data: pd.DataFrame,
