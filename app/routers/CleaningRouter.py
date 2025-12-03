@@ -6,7 +6,7 @@ import app.services.CleaningServices as CleaningServices
 
 router = APIRouter(
     prefix="/cleaning",
-    tags=["Cleaning Time Series Data"])
+    tags=["Cleaning"])
 
 @router.post("/clean", response_model=TimeSeriesResponse)
 async def clean_time_series(
