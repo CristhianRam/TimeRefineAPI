@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 # Routers
 from app.routers.CleaningRouter import router as cleaning_router
+from app.routers.WindowingRouter import router as windowing_router
 
 
 app = FastAPI(
@@ -10,6 +11,7 @@ app = FastAPI(
 )
 
 app.include_router(cleaning_router)
+app.include_router(windowing_router)
 
 @app.get("/")
 def root():

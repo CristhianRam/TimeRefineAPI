@@ -8,7 +8,8 @@ router = APIRouter(
     prefix="/cleaning",
     tags=["Cleaning"])
 
-@router.post("/clean", response_model=TimeSeriesResponse)
+@router.post("/clean", response_model=TimeSeriesResponse,
+summary="Clean time series data")
 async def clean_time_series(
     request: TimeSeriesRequest,
     options: CleaningOptions

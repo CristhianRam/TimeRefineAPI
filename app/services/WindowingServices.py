@@ -1,7 +1,6 @@
 import numpy as np
 import pandas as pd
-from app.models.windowing import WindowingOptions
-from app.models.windowing import FeatureExtractionOptions
+from app.schemas.Windowing import WindowingOptions, FeatureExtractionOptions
 
 def make_windows(
     data: pd.DataFrame,
