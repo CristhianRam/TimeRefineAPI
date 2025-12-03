@@ -17,3 +17,12 @@ class FeatureExtractionOptions(BaseModel):
     median: bool = False
     energy: bool = False
     entropy: bool = False
+
+class FeaturesResponse(BaseModel):
+    columns: list[str] = Field(
+        ...,
+        description="List of feature names extracted from the time series data.")
+
+    values: list[list[float]] = Field(
+        ...,
+        description="Extracted features values from the time series data.")
